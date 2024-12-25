@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cool Company</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap"
+      rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content-wrapper">
+        <div class="main-banners">
+          <div class="info-banner">
+            <img src="./img/logo.png" alt="logo" /><br />
+            <h1>
+              С помощью нас <br />
+              вы сможете создать то, о чем <span class="bolder">желаете!</span>
+            </h1>
+            <p>
+              Наши возможности + опыт позволят Вам достичь огромного успеха. Мы верим в вас! И знаем
+              это на все 100%. Вас не остановить!
+            </p>
+            <button>Узнать больше...</button>
+          </div>
+          <div class="image-banner">
+            <img src="img/header-img.png" alt="фото" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="required-blocks">
+      <h1>Что Вам необходимо?</h1>
+      <div class="content-wrapper">
+        <div class="required-blocks-list">
+          <div class="block">
+            <img src="img/f3.png" alt="f3-image" />
+            <h2>Первый блок</h2>
+            <p class="required-blocks-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit
+            </p>
+          </div>
+          <div class="block">
+            <img src="img/f4.png" alt="f4-image" />
+            <h2>Второй блок</h2>
+            <p class="required-blocks-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit?
+            </p>
+          </div>
+          <div class="block">
+            <img src="img/f5.png" alt="f5-image" />
+            <h2>Третий блок</h2>
+            <p class="required-blocks-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-block order">
+      <h1>Форма заказа продукта или услуги</h1>
+      <form id="orderForm">
+        <input type="text" id="productName" placeholder="Название продукта" />
+        <input type="number" id="quantity" placeholder="Количество" />
+        <input type="email" id="userEmail" placeholder="Ваш E-mail" />
+        <input type="date" id="deliveryDate" placeholder="Дата доставки" />
+        <div id="errorMessage"></div>
+        <button type="button" onclick="validateForm()">Отправить заказ</button>
+      </form>
+      <div id="orderOutput"></div>
+    </div>
+    <div class="form-block">
+      <h1>Форма заказа обратного звонка</h1>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Имя" required />
+        <input type="email" name="email" placeholder="Введите свой E-mail" required />
+        <input type="tel" name="phone" placeholder="Телефон" pattern="\d{11}" required />
+        <input type="text" name="topic" placeholder="Какая тема вас интересует?" required />
+        <button type="submit">Отправить вопрос!</button>
+      </form>
+    </div>
+    <div class="footer">
+      <div class="background1">
+        <p class="def">@ Все на этом сайте защищено</p>
+      </div>
+      <div class="background2"></div>
+    </div>
+  </body>
+  <script src="js/main.js"></script>
+</html>
